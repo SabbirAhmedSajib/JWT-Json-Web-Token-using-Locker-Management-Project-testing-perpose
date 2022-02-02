@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
@@ -15,7 +16,7 @@ import javax.validation.constraints.Size;
 @Table(
         name = "LSDRWRREL"
 )
-public class LSDRWRRELEntity {
+public class LSDRWRRELEntity implements Serializable {
     @Id
     @GeneratedValue(
             strategy= GenerationType.AUTO
@@ -23,7 +24,6 @@ public class LSDRWRRELEntity {
     private long RELID;
     private Long LCKRID;
     private Long DRWRID;
-
     private String ACTNUM;
     private String ACTYPE;
     private String DEPPRO;

@@ -116,38 +116,12 @@ public class LSDRWRRELServiceImpl implements LSDRWRRELService {
             return pagenationResponse;
         }
 
+
     //Convert Entity into DTO
     private LSDRWRRELDto mapToDTO(LSDRWRRELEntity lsdrwrrelEntity){
 
         LSDRWRRELDto lsdrwrrelDto = mapper.map(lsdrwrrelEntity, LSDRWRRELDto.class);
         return lsdrwrrelDto;
-
-      /*  LSDRWRRELDto lsdrwrrelDto = new LSDRWRRELDto();
-        lsdrwrrelDto.setRELID(lsdrwrrelEntity.getRELID());
-        lsdrwrrelDto.setLCKRID(lsdrwrrelEntity.getLCKRID());
-        lsdrwrrelDto.setDRWRID(lsdrwrrelEntity.getDRWRID());
-        lsdrwrrelDto.setACTNUM(lsdrwrrelEntity.getACTNUM());
-        lsdrwrrelDto.setACTYPE(lsdrwrrelEntity.getACTYPE());
-        lsdrwrrelDto.setDEPPRO(lsdrwrrelEntity.getDEPPRO());
-        lsdrwrrelDto.setFORSALVLU(lsdrwrrelEntity.getFORSALVLU());
-        lsdrwrrelDto.setMARVLU(lsdrwrrelEntity.getMARVLU());
-        lsdrwrrelDto.setCAUMNY(lsdrwrrelEntity.getCAUMNY());
-        lsdrwrrelDto.setCUSTPE(lsdrwrrelEntity.getCUSTPE());
-        lsdrwrrelDto.setCUSTPEDES(lsdrwrrelEntity.getCUSTPEDES());
-        lsdrwrrelDto.setADRES1(lsdrwrrelEntity.getADRES1());
-        lsdrwrrelDto.setADRES2(lsdrwrrelEntity.getADRES2());
-        lsdrwrrelDto.setHOUSE(lsdrwrrelEntity.getHOUSE());
-        lsdrwrrelDto.setCITNUM(lsdrwrrelEntity.getCITNUM());
-        lsdrwrrelDto.setTELNUM(lsdrwrrelEntity.getTELNUM());
-        lsdrwrrelDto.setALLODAT(lsdrwrrelEntity.getALLODAT());
-        lsdrwrrelDto.setEXPDAT(lsdrwrrelEntity.getEXPDAT());
-        lsdrwrrelDto.setSTATUS(lsdrwrrelEntity.getSTATUS());
-        lsdrwrrelDto.setREMARKS(lsdrwrrelEntity.getREMARKS());
-
-
-        return lsdrwrrelDto;
-        */
-
     }
 
     //Converted DTO to Entity
@@ -155,31 +129,5 @@ public class LSDRWRRELServiceImpl implements LSDRWRRELService {
 
         LSDRWRRELEntity lsdrwrrelEntity = mapper.map(lsdrwrrelDto,LSDRWRRELEntity.class);
         return lsdrwrrelEntity;
-
-      /*  LSDRWRRELEntity lsdrwrrelEntity = new LSDRWRRELEntity();
-
-        lsdrwrrelEntity.setRELID(lsdrwrrelDto.getRELID());
-        lsdrwrrelEntity.setLCKRID(lsdrwrrelDto.getLCKRID());
-        lsdrwrrelEntity.setDRWRID(lsdrwrrelDto.getDRWRID());
-        lsdrwrrelEntity.setACTNUM(lsdrwrrelDto.getACTNUM());
-        lsdrwrrelEntity.setACTYPE(lsdrwrrelDto.getACTYPE());
-        lsdrwrrelEntity.setDEPPRO(lsdrwrrelDto.getDEPPRO());
-        lsdrwrrelEntity.setFORSALVLU(lsdrwrrelDto.getFORSALVLU());
-        lsdrwrrelEntity.setMARVLU(lsdrwrrelDto.getMARVLU());
-        lsdrwrrelEntity.setCAUMNY(lsdrwrrelDto.getCAUMNY());
-        lsdrwrrelEntity.setCUSTPE(lsdrwrrelDto.getCUSTPE());
-        lsdrwrrelEntity.setCUSTPEDES(lsdrwrrelDto.getCUSTPEDES());
-        lsdrwrrelEntity.setADRES1(lsdrwrrelDto.getADRES1());
-        lsdrwrrelEntity.setADRES2(lsdrwrrelDto.getADRES2());
-        lsdrwrrelEntity.setHOUSE(lsdrwrrelDto.getHOUSE());
-        lsdrwrrelEntity.setCITNUM(lsdrwrrelDto.getCITNUM());
-        lsdrwrrelEntity.setTELNUM(lsdrwrrelDto.getTELNUM());
-        lsdrwrrelEntity.setALLODAT(lsdrwrrelDto.getALLODAT());
-        lsdrwrrelEntity.setEXPDAT(lsdrwrrelDto.getEXPDAT());
-        lsdrwrrelEntity.setSTATUS(lsdrwrrelDto.getSTATUS());
-        lsdrwrrelEntity.setREMARKS(lsdrwrrelDto.getREMARKS());
-
-        return lsdrwrrelEntity;
-        */
     }
 }

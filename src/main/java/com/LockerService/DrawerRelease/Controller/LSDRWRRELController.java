@@ -17,8 +17,12 @@ import java.util.List;
 @RequestMapping("/api/Release")
 public class LSDRWRRELController {
 
-    @Autowired
-    private LSDRWRRELService lsdrwrrelService;
+
+    private final LSDRWRRELService lsdrwrrelService;
+
+    public LSDRWRRELController(LSDRWRRELService lsdrwrrelService) {
+        this.lsdrwrrelService = lsdrwrrelService;
+    }
 
 
     @PreAuthorize("hasRole('ADMIN')")
